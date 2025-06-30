@@ -1,0 +1,128 @@
+/* variável da transição, para todos terem a mesma */
+:root{ --transicao: .25s ease-in-out;}
+
+/* ESTILIZAÇÕES BÁSICAS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100dvw;
+    display: grid;
+    min-height: 100dvh;
+    place-items: center;
+    background: linear-gradient(45deg, orange, red);
+}
+
+/* estilizando o container onde os cards estão */
+#container {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* estilizando os cards */
+#container .card {
+    width: 20rem;
+    height: 15rem;
+    background: #fff;
+    position: relative;
+    border-radius: 20px;
+    transition: var(--transicao);
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, .35);
+}
+
+/* hover do card */
+#container .card:hover { height: 25rem; }
+
+/* div com a imagem do card */
+#container .card .cardImg {
+    top: 1rem;
+    left: 50%;
+    width: 18rem;
+    height: 10rem;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    transition: var(--transicao);
+}
+
+/* img do card */
+#container .card .cardImg img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* hover geral das img */
+#container .card:hover .cardImg{ 
+    width: 9rem;
+    height: 9rem;
+    top: -2.5rem;
+    border-radius: 50%; 
+}
+
+/* hover especifico da 1° img */
+#container .card:hover #cardImg1 { left: 0; transform: translateX(-50%) rotate(-15deg);}
+
+/* hover especifico da 3° img */
+#container .card:hover #cardImg3 { left: 100%; transform: translateX(-50%) rotate(15deg);}
+
+/* txt do card */
+#container .card .cardTxt {
+    gap: .5rem;
+    top: 12rem;
+    display: flex;
+    height: 1.75rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    transition: var(--transicao);
+}
+
+/* hover do txt */
+#container .card:hover .cardTxt { top: 7.5rem; height: 15rem; }
+
+/* h2 do txt */
+#container .card .cardTxt h2{ 
+    left: .75rem;
+    color: var(--cor);
+    position: absolute;
+    transition: var(--transicao);
+}
+
+/* hover do h2 */
+#container .card:hover .cardTxt h2{ left: 22.5%; }
+
+/* p do txt */
+#container .card .cardTxt p { margin: 2.25rem auto 1rem auto; }
+
+/* a do txt */
+#container .card .cardTxt a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: .5rem .75rem;
+    text-decoration: none;
+    transition: var(--transicao);
+    background-color: var(--cor);
+}
+
+/* hover do a */
+#container .card .cardTxt a:hover {
+    border-radius: 10px;
+    background-color: #090909;
+}
