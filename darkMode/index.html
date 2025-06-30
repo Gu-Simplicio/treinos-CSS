@@ -7,10 +7,27 @@
     <title>Só um botão de darkmode</title>
 </head>
 <body>
+    <!-- título -->
     <h1>Modo dark e modo light</h1>
 
+    <!-- botão que faz o darkmode -->
     <div id="trilho">
         <div id="indicador"></div>
     </div>
+
+    <!-- texto para voltar -->
+    <h1>Se já tiver aproveitado, volte por <a href="">aqui</a></h1>
+
+    <!-- código -->
+    <script>
+        // variável com o elemento do trilho
+        const trilho = document.querySelector("#trilho");
+
+        //evento click adicionado ao trilho
+        trilho.addEventListener("click", ()=> {
+            //muda a classe do body entre dark e vazia
+            document.querySelector("body").classList.toggle("dark")
+        })
+    </script>
 </body>
 </html>

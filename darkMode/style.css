@@ -1,0 +1,72 @@
+/* variável da transição */
+:root { --transicao: .25s ease-in-out; }
+
+/* estilizações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilização do body natural */
+body {
+    gap: 3rem;
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+    align-items: center;
+    background: #212121;
+    flex-direction: column;
+    justify-content: center;
+    transition: var(--transicao);
+}
+
+/* estilização dos textos */
+h1{ color: #fff }
+
+/* estilização do a */
+a{ color: lightblue}
+
+/* estilização do trilho */
+#trilho {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    cursor: pointer;
+    padding: 0 .5rem;
+    position: relative;
+    align-items: center;
+    border-radius: 10rem;
+    justify-content: start;
+    background-color: #4d4d4d;
+}
+
+/* estilização da bolinha indicadora */
+#trilho #indicador {
+    top: 50%;
+    left: .5rem;
+    width: 9rem;
+    height: 9rem;
+    background: #000;
+    position: absolute;
+    border-radius: 50%;
+    transition: var(--transicao);
+    transform: translateY(-50%);
+}
+
+/* estilização após mudar a cor */
+body.dark{background-color: #fff;}
+
+body.dark{background-color: #efefef;}
+
+body.dark h1 { color: #000; }
+
+body.dark #trilho { background: #c3c3c3; }
+
+body.dark #trilho #indicador{
+    left: 10.5rem;
+    background-color: #fff;
+}
+
+body.dark a {color: blue;}
