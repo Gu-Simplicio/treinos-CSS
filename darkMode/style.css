@@ -70,3 +70,8 @@ body.dark #trilho #indicador{
 }
 
 body.dark a {color: blue;}
+
+/* responsividade */
+@media(max-width: 760px) {
+    body{text-align: center; justify-content: start;}
+}
