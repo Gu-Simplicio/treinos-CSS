@@ -6,6 +6,46 @@
     <title>Login/Cadastro</title>
 </head>
 <body>
-    
+    <div id="containerForm">
+        <div id="separaForms"> <!-- div com os botões que separam qual form está ativo -->
+            <button>
+                Login
+            </button>
+            <button>
+                Cadastro
+            </button>
+        </div>
+
+        <!-- formulário de login -->
+        <form action="" id="formLogin">
+            <label for="nomeLogin">Nome de usuário
+                <input type="text" id="nomeLogin">
+            </label>
+            <label for="senhaLogin">Senha de usuário
+                <input type="password" id="senhaLogin">
+
+                <input type="checkbox" onchange="document.querySelector('#senhaLogin').type == 'password' ? document.querySelector('#senhaLogin').type = 'text' : document.querySelector('#senhaLogin').type = 'password'; document.querySelector('#senhaLogin').focus()">
+            </label>
+
+            <input type="submit" value="Login" class="btnForm">
+        </form>
+
+        <!-- formulário de cadastro -->
+        <form action="" id="formCadastro">
+            <label for="nomeCadastro">Nome de usuário
+                <input type="text" id="nomeCadastro">
+            </label>
+            <label for="emailCadastro">E-mail de usuário
+                <input type="email" id="emailCadastro">
+            </label>
+            <label for="senhaCadastro">Senha de usuário
+                <input type="password" id="senhaCadastro" required>
+
+                <input type="checkbox" onchange="document.querySelector('#senhaCadastro').type == 'password' ? document.querySelector('#senhaCadastro').type = 'text' : document.querySelector('#senhaCadastro').type = 'password'; document.querySelector('#senhaCadastro').focus()">
+            </label>
+
+            <input type="submit" value="Cadastro" class="btnForm">
+        </form>
+    </div>
 </body>
 </html>
