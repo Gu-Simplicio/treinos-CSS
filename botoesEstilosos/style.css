@@ -54,8 +54,46 @@ button{
     transform: translate(-50%, -50%);
 }
 
+/* hover do primeiro botão */
 #botao-um:hover { color: #fff }
 #botao-um:hover::before{
     width: 100%;
     height: 100%;
 }
+
+/* estilizações do segundo botão */
+#botao-dois {
+    border: none;
+    outline: none;
+    overflow: hidden;
+    color: #7ad1ee;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    border: 1px solid #7ad1ee;
+    background-color: transparent;
+}
+
+#botao-dois::before {
+    top: 0;
+    z-index: -1;
+    left: -100%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50px;
+    transition: .25s ease;
+    background-color: blue;
+}
+
+
+/* hover do segundo botão */
+#botao-dois:hover{ 
+    color: #fff; 
+    border-color: blue;
+}
+#botao-dois:hover::before {
+    left: 0;
+}
+
