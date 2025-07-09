@@ -24,20 +24,20 @@ ul {
 
 /*estilos de todos os botões */
 button{
+    border: none;
+    outline: none;
     cursor: pointer;
+    font-size: 1.25rem;
     position: relative;
     transition: .25s ease-in-out;
 }
 
 /* primeiro botão */
 #botao-um {
-    width: 200px;   
-    border: none;
+    width: 200px;
     height: 50px;
-    outline: none;
     color: #00a030;
     font-weight: 200;
-    font-size: 1.25rem;
     border: 1px solid #00a030;
     background-color: transparent;
 }
@@ -97,3 +97,16 @@ button{
     left: 0;
 }
 
+/* estilo do terceiro bot] */
+#botao-tres {
+    padding: 1rem 5rem;
+    background-color: #eee;
+}
+
+#botao-tres:hover {
+    padding: 1rem 1.5rem;
+    background: #fefefe;
+    letter-spacing: .25rem;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
