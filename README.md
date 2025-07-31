@@ -1,3 +1,15 @@
+# CSS stylization study project
+> ### (para falantes de português, texto traduzido mais abaixo)
+<hr>
+
+## What is it about?
+
+This repository is for study CSS, whether animations or design construction. Each directory is for a different test/training 
+
+## How to use this repository?
+
+Simple, just clone it and open the main index.html (the one that is in the root dir), there is an link to each type different of training
+
 # Projeto de estudo de estilizações CSS
 
 ## Do que se trata?
