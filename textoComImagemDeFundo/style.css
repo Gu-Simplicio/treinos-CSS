@@ -1,0 +1,25 @@
+div{
+    width: 100%;
+    background-color: red;
+}
+
+h1 {
+    font-size: 7.5rem;
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-size: cover;
+    --webkit-background-clip: cover;
+    background-image: url('img/cidade.jpg');
+}
+
+/* h1 {
+background-image: url("img/cidade.jpg"); 
+  background-size: cover;
+  background-color: #000;
+  background-position: center;
+  background-clip: text;
+  padding: 20px;
+  color: transparent;
+  text-align: center; /* Centraliza o texto 
+} */
